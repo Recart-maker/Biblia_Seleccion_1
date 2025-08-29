@@ -13,6 +13,7 @@ const urlsToCache = [
   // Agrega aquí las rutas a los íconos
   '/static/images/icono-192.png',
   '/static/images/icono-512.png',
+  '/static/images/biblia.png',
   // Agrega aquí otras rutas importantes como tus archivos JSON si quieres que se guarden en caché
   '/biblia.json',
   '/resumen_libros.json'
