@@ -1,22 +1,15 @@
 const CACHE_NAME = 'biblia-cache-v1';
 const urlsToCache = [
   '/',
-  '/index.html',
-  '/favoritos.html',
-  '/libros.html',
-  '/resultados_busqueda.html',
-  '/ver_capitulo.html',
-  '/ver_libro.html',
+  '/libros',
+  '/favoritos',
   '/static/css/style.css',
   '/static/js/script.js',
   '/static/manifest.json',
   // Agrega aquí las rutas a los íconos
   '/static/images/icono-192.png',
   '/static/images/icono-512.png',
-  '/static/images/biblia.png',
-  // Agrega aquí otras rutas importantes como tus archivos JSON si quieres que se guarden en caché
-  '/biblia.json',
-  '/resumen_libros.json'
+  '/static/images/biblia.png'
 ];
 
 self.addEventListener('install', event => {
