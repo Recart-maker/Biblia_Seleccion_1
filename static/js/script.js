@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // En /static/js/script.js
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/static/js/service-worker.js', { scope: '/' })
+    navigator.serviceWorker.register('/static/service-worker.js', { scope: '/' })
       .then(function(registration) {
         console.log('Service Worker registrado con éxito: ', registration.scope);
       }, function(err) {
