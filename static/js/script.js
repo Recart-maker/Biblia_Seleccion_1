@@ -157,14 +157,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Agrega esto al inicio o final de tu archivo script.js
+// En /static/js/script.js
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then(registration => {
-        console.log('Service Worker registrado con éxito:', registration);
-      })
-      .catch(error => {
-        console.log('Fallo el registro del Service Worker:', error);
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/static/js/service-worker.js', { scope: '/' })
+      .then(function(registration) {
+        console.log('Service Worker registrado con éxito: ', registration.scope);
+      }, function(err) {
+        console.log('Fallo el registro del Service Worker: ', err);
       });
   });
 }
