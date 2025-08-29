@@ -6,7 +6,6 @@ const urlsToCache = [
   '/static/css/style.css',
   '/static/js/script.js',
   '/static/manifest.json',
-  // Agrega aquí las rutas a los íconos
   '/static/images/icono-192.png',
   '/static/images/icono-512.png',
   '/static/images/biblia.png'
