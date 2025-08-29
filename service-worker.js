@@ -15,7 +15,6 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
-        console.log('Cacheando archivos estáticos');
         return cache.addAll(urlsToCache);
       })
   );
